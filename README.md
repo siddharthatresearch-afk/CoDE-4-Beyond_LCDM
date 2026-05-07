@@ -7,7 +7,7 @@
 
 # Overview
 
-**CoDE-4** (Cosmological Dark-Energy Engine v4) is an exploratory computational cosmology framework designed to investigate whether mild late-time modifications to cosmic expansion can remain approximately consistent with multiple observational probes while reducing the inferred Hubble tension.
+**CoDE-4** (Cosmological Dynamical Engine v4) is an exploratory computational cosmology framework designed to investigate whether mild late-time modifications to cosmic expansion can remain approximately consistent with multiple observational probes while reducing the inferred Hubble tension.
 
 The project focuses on:
 - late-time expansion dynamics,
