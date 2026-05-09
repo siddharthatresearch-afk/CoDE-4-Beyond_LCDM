@@ -246,7 +246,7 @@ The purpose of the project is to investigate whether mild expansion-history modi
 
 ## Ongoing Development Notice
 
-The CoDE-4 framework is currently undergoing active theoretical and statistical refinement. Over the after ~80 hours, several major additions are being integrated into the repository, including:
+The CoDE-4 framework is currently undergoing active theoretical and statistical refinement. Over the next ~80 hours, several major additions are being finalized to be integrated into the repository, including:
 
 - compressed-observable (\chi^2) consistency analysis,
 - expanded perturbation-theory documentation,
