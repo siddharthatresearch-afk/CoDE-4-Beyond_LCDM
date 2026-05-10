@@ -1,16 +1,12 @@
 # ============================================================
 
-# CoDE-4 COMPRESSED OBSERVABLE χ² ANALYSIS
+# CoDE-4 CHI-SQUARE ENGINE
+
+# chi_square.py
 
 # ============================================================
 
 import numpy as np
-
-print("\n" + "="*70)
-
-print("CoDE-4 COMPRESSED OBSERVABLE χ² ANALYSIS")
-
-print("="*70)
 
 # ============================================================
 
@@ -18,21 +14,31 @@ print("="*70)
 
 # ============================================================
 
+# Hubble Constant (SH0ES)
+
 H0_obs = 73.04
 
 sigma_H0 = 1.04
+
+# CMB Shift Parameter
 
 R_obs = 1.7502
 
 sigma_R = 0.0046
 
+# First Acoustic Peak
+
 l1_obs = 220.6
 
 sigma_l1 = 0.5
 
+# Weak Lensing S8
+
 S8_obs = 0.776
 
 sigma_S8 = 0.017
+
+# Matter-Radiation Equality
 
 z_eq_obs = 3400
 
@@ -66,7 +72,7 @@ def chi2(model, obs, sigma):
 
 # ============================================================
 
-# INDIVIDUAL χ² VALUES
+# INDIVIDUAL CHI-SQUARES
 
 # ============================================================
 
@@ -82,7 +88,7 @@ chi2_eq = chi2(z_eq_model, z_eq_obs, sigma_z_eq)
 
 # ============================================================
 
-# TOTAL χ²
+# TOTAL CHI-SQUARE
 
 # ============================================================
 
@@ -99,45 +105,3 @@ chi2_total = (
     chi2_eq
 
 )
-
-# ============================================================
-
-# OUTPUT
-
-# ============================================================
-
-print("\n--- INDIVIDUAL χ² CONTRIBUTIONS ---")
-
-print(f"H0 χ²              = {chi2_H0:.4f}")
-
-print(f"Shift Parameter χ² = {chi2_R:.4f}")
-
-print(f"Acoustic Peak χ²   = {chi2_l1:.4f}")
-
-print(f"S8 χ²              = {chi2_S8:.4f}")
-
-print(f"z_eq χ²            = {chi2_eq:.4f}")
-
-print("\n--- TOTAL χ² ---")
-
-print(f"Total χ² = {chi2_total:.4f}")
-
-print("\n--- INTERPRETATION ---")
-
-if chi2_total < 5:
-
-    print("Fit Status: EXCELLENT compressed-observable consistency")
-
-elif chi2_total < 15:
-
-    print("Fit Status: GOOD compressed-observable consistency")
-
-elif chi2_total < 30:
-
-    print("Fit Status: MODERATE consistency")
-
-else:
-
-    print("Fit Status: Significant observational tension")
-
-print("="*70)
