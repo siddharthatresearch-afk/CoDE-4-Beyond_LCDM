@@ -202,7 +202,7 @@ Clone the repository:
 
 ```bash
 git clone <repository-url>
-cd CoDE-4
+cd CoDE-4-Beyond_LCDM-Phase-2
 ```
 
 Install dependencies:
